@@ -1,8 +1,8 @@
 <?php
 
-    define('HOST', 'localhost');
-    define('USER', 'cad1');
-    define('PASS', 'cad1');
-    define('BASE', 'cadastro');
+    define('HOST', getenv('DB_HOST'));
+    define('USER', getenv('DB_USER'));
+    define('PASS', getenv('DB_PASSWORD'));
+    define('BASE', getenv('DB_NAME'));
 
     $conn = new MySQLi(HOST,USER,PASS,BASE);
